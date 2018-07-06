@@ -1,0 +1,17 @@
+{
+  "name": "speech_recognition",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --directory --server --files \"*.css, *.html, *.js\""
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.1",
+    "eslint": "^5.0.1",
+    "eslint-config-prettier": "^2.9.0",
+    "prettier": "1.13.7",
+    "stylelint": "^9.3.0",
+    "stylelint-config-prettier": "^3.3.0",
+    "stylelint-order": "^0.8.1"
+  }
+}
