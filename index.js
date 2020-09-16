@@ -1,5 +1,4 @@
-window.SpeechRecognition =
-  window.SpeechRecognition || window.webkitSpeechRecognition;
+window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
 recognition.interimResults = true;
@@ -15,8 +14,8 @@ recognition.addEventListener('result', e => {
     .map(result => result.transcript)
     .join('');
 
-  const poopScript = transcript.replace(/poop|poo|shit|dump/gi, '💩');
-  p.textContent = poopScript;
+  const curseScript = transcript.replace(/poop|poo|shit|dump/gi, '💩');
+  p.textContent = curseScript;
 
   if (e.results[0].isFinal) {
     p = document.createElement('p');
